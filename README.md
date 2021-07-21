@@ -14,8 +14,10 @@ We will read, process, visualize and create a machine learning model to predict 
 4. Build and compare different regression models in order to predict other variables.
 5. Build a front end to display the conclusions 
 
-##
-link to see examples of final project data 😊 -> https://joaquinlou-tfm.herokuapp.com/
+## How can I see the project
+Two options:
+- You can run the Jupyter Notebooks in order or if you want to see only a part, you can too!
+- Here is the link to see a summary of the final project 😊 -> https://joaquinlou-tfm.herokuapp.com/
 
 ## Conclusions
 It has been demonstrated that the impact of covid-19 on this sector has been significant but in a positive way. The confinements and therefore, the need for entertainment in our homes, has made these two companies benefit to a greater and lesser extent.
