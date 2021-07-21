@@ -8,7 +8,7 @@ We will read, process, visualize and create a machine learning model to predict 
 
 ## How can you run the project?
 Two options:
-- You can run the Jupyter Notebooks in order or if you want to see only a part, you can too! There are 3 parts:
+- You can run the Jupyter Notebooks in order. There are 3 parts:
 -  1-Steam data cleaning and visualization -> Steam data processing and visualization
 -  2-Twitch data cleaning and analysis -> Twitch data processing and visualization
 -  3-Data merge & Prediction -> Merge of data, ML Train & Test and model evaluation
