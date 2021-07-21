@@ -14,7 +14,7 @@ We will read, process, visualize and create a machine learning model to predict 
 4. Build and compare different regression models in order to predict other variables.
 5. Build a front end to display the conclusions 
 
-## How can I see the project
+## How can you run the project?
 Two options:
 - You can run the Jupyter Notebooks in order or if you want to see only a part, you can too!
 - Here is the link to see a summary of the final project 😊 -> https://joaquinlou-tfm.herokuapp.com/
