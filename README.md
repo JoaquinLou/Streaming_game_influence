@@ -6,8 +6,9 @@ This project will seek a relationship between the leading streaming platform Twi
 
 We will read, process, visualize and create a machine learning model to predict the expected number of players based on users viewing a category on Twitch.
 
-## How can you run the project?
-You can run the Jupyter Notebooks in order. There are 3 parts:
+## How can you run the project? 
+First you need to download all the datasets from the upper links, Steam & Twitch and save it on the same folder of the jupyter notebooks.
+Then you can run the Jupyter Notebooks in order. There are 3 parts:
 -  1-Steam data cleaning and visualization -> Steam data processing and visualization
 -  2-Twitch data cleaning and analysis -> Twitch data processing and visualization
 -  3-Data merge & Prediction -> Merge of data, ML Train & Test and model evaluation
