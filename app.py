@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import joblib, os #Reading machine learning models
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates #Customize seaborn xtickers 
@@ -27,7 +28,6 @@ df_steam = load_data('Steam data processed.csv')
 
 
 # Loading Machine Learning Models
-@st.cache
 def load_prediction_model(model_file):
 	loaded_model = joblib.load(open(os.path.join(model_file),"rb"))
 	return loaded_model
@@ -157,7 +157,7 @@ def main():
 		)
 	
 	st.write("We can appreciate that the rise in the number of players in 2018 is due to the PLAYERUNKNOWN'S BATTLEGROUNDS game. It established a new form of gameplay called Battle Royale along with Fortnite.")
-
+	
 	st.write("---")
 
 
@@ -170,8 +170,10 @@ def main():
 			)
 
 	#Model selection
-	model_selected = ["Prediction based on total data", "Prediction based on data since covid"]
-	choice = st.selectbox("Please. Choose your prediction model", model_selected)
+
+	model_selected = ['Select data', 'Prediction based on total data', 'Prediction based on data since covid']
+	choice = st.selectbox("Choose your data for prediction model", model_selected)
+
 
 
 
@@ -190,6 +192,8 @@ def main():
 			predict_players = knn_regressor.predict(expected_viewers_reshaped)
 
 			st.success("With {} viewers on your game you should expect to have {} players per month".format(expected_viewers,(predict_players[0].round(1))))
+			
+			st.markdown("## Thanks for using this app! 🎮🕹")
 
 
 
@@ -208,6 +212,8 @@ def main():
 			predict_players_2020 = knn_regressor_2020.predict(expected_viewers_reshaped_2020)
 
 			st.success("With {} viewers on your game you should expect to have {} players per month".format(expected_viewers_2020,(predict_players_2020[0].round(1))))
+
+			st.markdown("## Thanks for using this app! 🎮🕹")
 
 if __name__ == '__main__':
 	main()
