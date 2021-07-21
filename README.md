@@ -6,17 +6,12 @@ This project will seek a relationship between the leading streaming platform Twi
 
 We will read, process, visualize and create a machine learning model to predict the expected number of players based on users viewing a category on Twitch.
 
-## Methodology:
-1. Read csv
-2. Clean data
-3. Display and analyze data using, corrleations plots, line plots, scatter plots, ... in python.
-4. Analyze data and variables on Tableau
-4. Build and compare different regression models in order to predict other variables.
-5. Build a front end to display the conclusions 
-
 ## How can you run the project?
 Two options:
-- You can run the Jupyter Notebooks in order or if you want to see only a part, you can too!
+- You can run the Jupyter Notebooks in order or if you want to see only a part, you can too! There are 3 parts:
+-  1-Steam data cleaning and visualization -> Steam data processing and visualization
+-  2-Twitch data cleaning and analysis -> Twitch data processing and visualization
+-  3-Data merge & Prediction -> Merge of data, ML Train & Test and model evaluation
 - Here is the link to see a summary of the final project 😊 -> https://joaquinlou-tfm.herokuapp.com/
 
 ## Conclusions
