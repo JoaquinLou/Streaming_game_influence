@@ -166,7 +166,8 @@ def main():
 	st.header('Machine Learning - KNN Regressor')
 	st.write('''
 		Due to what we have seen in our data it has been decided to develop a predictive model for the two trends.
-		One prediction model for the total data and another prediction model for the new evolution after the pandemic.'''
+		One prediction model for the total data and another prediction model for the new evolution after the pandemic.
+		Our models are limited to a max of 5000 average viewers per month due to our data'''
 			)
 
 	#Model selection
@@ -182,7 +183,7 @@ def main():
 
 		st.subheader("Average of viewers expected per month")
 
-		expected_viewers = st.slider("Number of viewers dou you expect to have", 0, 500000)
+		expected_viewers = st.slider("Number of average month viewers dou you expect to have", 0, 5000)
 
 		if st.button("Calculate"):
 
@@ -202,7 +203,7 @@ def main():
 
 		st.subheader("Average of viewers expected per month")
 
-		expected_viewers_2020 = st.slider("Number of viewers do you expect to have", 0, 500000)
+		expected_viewers_2020 = st.slider("Number of average month viewers do you expect to have", 0, 5000)
 
 		if st.button("Calculate"):
 
