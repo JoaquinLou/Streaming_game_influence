@@ -186,7 +186,7 @@ def main():
 
 		if st.button("Calculate"):
 
-			knn_regressor = load_prediction_model("Models/knn5_regression_total.pkl")
+			knn_regressor = load_prediction_model("Models/knn_regression_viewers.pkl")
 			expected_viewers_reshaped = np.array(expected_viewers).reshape(-1,1)
 
 			predict_players = knn_regressor.predict(expected_viewers_reshaped)
@@ -206,7 +206,7 @@ def main():
 
 		if st.button("Calculate"):
 
-			knn_regressor_2020 = load_prediction_model("Models/knn5_regression_covid.pkl")
+			knn_regressor_2020 = load_prediction_model("Models/knn_regression_viewers_2020.pkl")
 			expected_viewers_reshaped_2020 = np.array(expected_viewers_2020).reshape(-1,1)
 
 			predict_players_2020 = knn_regressor_2020.predict(expected_viewers_reshaped_2020)
