@@ -178,11 +178,11 @@ def main():
 
 
 # Prediction with knn (k=43) and total data
-	if choice == 'Prediction based in total data':
+	if choice == 'Prediction based on total data':
 
 		st.subheader("Average of viewers expected per month")
 
-		expected_viewers = st.slider("Number of viewers dou you expect to have", 0, 1000000)
+		expected_viewers = st.slider("Number of viewers dou you expect to have", 0, 500000)
 
 		if st.button("Calculate"):
 
@@ -202,7 +202,7 @@ def main():
 
 		st.subheader("Average of viewers expected per month")
 
-		expected_viewers_2020 = st.slider("Number of viewers do you expect to have", 0, 1000000)
+		expected_viewers_2020 = st.slider("Number of viewers do you expect to have", 0, 500000)
 
 		if st.button("Calculate"):
 
