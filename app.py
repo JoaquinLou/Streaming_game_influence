@@ -187,12 +187,12 @@ def main():
 
 		if st.button("Calculate"):
 
-			knn_regressor = load_prediction_model("Models/knn_regression_viewers.pkl")
+			knn_regressor = load_prediction_model("Models/knn5_regression_total.pkl")
 			expected_viewers_reshaped = np.array(expected_viewers).reshape(-1,1)
 
 			predict_players = knn_regressor.predict(expected_viewers_reshaped)
 
-			st.success("With {} viewers on your game you should expect to have {} players per month".format(expected_viewers,(predict_players[0].round(1))))
+			st.success("With {} avg viewers on your game you should expect to have {} players per month".format(expected_viewers,(predict_players[0].round(1))))
 			
 			st.markdown("## Thanks for using this app! 🎮🕹")
 
@@ -207,12 +207,12 @@ def main():
 
 		if st.button("Calculate"):
 
-			knn_regressor_2020 = load_prediction_model("Models/knn_regression_viewers_2020.pkl")
+			knn_regressor_2020 = load_prediction_model("Models/knn5_regression_covid.pkl")
 			expected_viewers_reshaped_2020 = np.array(expected_viewers_2020).reshape(-1,1)
 
 			predict_players_2020 = knn_regressor_2020.predict(expected_viewers_reshaped_2020)
 
-			st.success("With {} viewers on your game you should expect to have {} players per month".format(expected_viewers_2020,(predict_players_2020[0].round(1))))
+			st.success("With {} avg viewers on your game you should expect to have {} players per month".format(expected_viewers_2020,(predict_players_2020[0].round(1))))
 
 			st.markdown("## Thanks for using this app! 🎮🕹")
 
